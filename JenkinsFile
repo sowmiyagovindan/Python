@@ -5,6 +5,9 @@ node{
      stage('Example Build') {
         workspace = pwd()
         echo "${workspace}"
+        env.PATH = "/usr/bin:${env.PATH}"
+        echo "${env.PATH}"
+
 
 
         }
