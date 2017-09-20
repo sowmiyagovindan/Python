@@ -6,8 +6,8 @@ node{
 
         workspace = pwd()
         env.PATH = "${workspace}/env/bin:/usr/bin:${env.PATH}"
-        echo '${env.PATH}'
-        sh 'python3 ${workspace}/HW.py'
+        echo '$env.PATH'
+        sh 'python ${workspace}/HW.py'
         echo 'Your file was executed'
 
         }
