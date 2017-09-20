@@ -4,7 +4,7 @@ node{
      }
      stage('Example Build') {
 
-        sh 'python3 HW.py'
+        sh 'python3 *.py'
 
      }
 
