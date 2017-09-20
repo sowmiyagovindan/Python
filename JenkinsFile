@@ -3,6 +3,10 @@ node{
         checkout scm
     }
     stage('Build'){
+        steps{
+            sh 'WORKSPACE'
+            echo $WORKSPACE
+        }
         echo "Hello World!!!"
     }
 }
