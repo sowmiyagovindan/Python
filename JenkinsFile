@@ -1,7 +1,7 @@
 node{
     stage('Example Build') {
          docker 'maven:3-alpine'
-         echo 'Hello, Maven
+         echo 'Hello, Maven'
          sh 'mvn --version'
 
         }
