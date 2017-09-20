@@ -3,18 +3,12 @@ node{
         checkout scm
      }
      stage('Example Build') {
+        for file in files:{
+            sh 'python3 file.py'
+        }
 
-        sh 'python3 *.py'
-
-     }
-     stage('Branch specific Build') {
-
-        if(env.BRANCH_NAME=='wipArithmeticPgm'){
-
-            sh 'python3 *.py'
 
      }
-     else{echo "The branch doesnt exist"}
-    }
+
 }
 
