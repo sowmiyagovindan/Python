@@ -7,7 +7,7 @@ node{
         echo "${workspace}"
         env.PATH = "/usr/bin:${env.PATH}"
         echo "${env.PATH}"
-        sh 'python ${workspace}/HW.py'
+        sh 'python3 HW.py'
 
 
 
