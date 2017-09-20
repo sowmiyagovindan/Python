@@ -3,9 +3,8 @@ node{
         checkout scm
      }
      stage('Example Build') {
-        for file in files:{
-            sh 'python3 file.py'
-        }
+
+            sh 'python3 *.py'
 
 
      }
