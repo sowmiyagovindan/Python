@@ -11,9 +11,10 @@ node{
 
         if(env.BRANCH_NAME=='wipArithmeticPgm'){
 
-        sh 'python3 *.py'
+            sh 'python3 *.py'
 
      }
      else{echo "The branch doesnt exist"}
     }
 }
+
