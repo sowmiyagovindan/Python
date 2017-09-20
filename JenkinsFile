@@ -3,7 +3,7 @@ node{
         checkout scm
     }
     stage('Build'){
-        sh 'make'
+        sh '$WORKSPACE'
         echo $WORKSPACE
     }
 
