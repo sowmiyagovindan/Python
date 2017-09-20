@@ -15,5 +15,5 @@ node{
 
      }
      else{echo "The branch doesnt exist"}
-
+    }
 }
