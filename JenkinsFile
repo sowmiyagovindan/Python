@@ -3,8 +3,7 @@ node{
         checkout scm
      }
      stage('Example Build') {
-        env.PATH = "/usr/bin:${env.PATH}"
-        echo "${env.PATH}"
+
         sh 'python3 HW.py'
 
      }
