@@ -3,7 +3,6 @@ node{
         checkout scm
     }
     stage('Build'){
-        sh '$WORKSPACE'
         echo $WORKSPACE
     }
 
