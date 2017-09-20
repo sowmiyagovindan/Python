@@ -1,11 +1,14 @@
 node{
-    docker.image('maven:3-alpine').inside{
-        stage('Example Build') {
+     stage('Checkout'){
+        checkout scm
+     }
+     stage('Example Build') {
 
-         echo 'Hello, Maven'
-         sh 'mvn --version'
-
+        workspace = pwd()
+        env.PATH = "${workspace}/env/bin:/usr/bin:${env.PATH}"
+        sh 'python3 ${workspace}/*.py'
+        echo 'Your file was executed'
 
         }
-    }
+
 }
