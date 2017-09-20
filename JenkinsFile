@@ -7,5 +7,13 @@ node{
         sh 'python3 *.py'
 
      }
+     stage('Branch specific Build') {
+
+        if(env.BRANCH_NAME=='wipArithmeticPgm'){
+
+        sh 'python3 *.py'
+
+     }
+     else{echo "The branch doesnt exist"}
 
 }
