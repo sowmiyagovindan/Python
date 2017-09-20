@@ -4,9 +4,8 @@ node{
     }
     stage('Build'){
         steps{
-            sh 'WORKSPACE'
+            sh 'make'
             echo $WORKSPACE
         }
-        echo "Hello World!!!"
-    }
+
 }
