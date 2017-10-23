@@ -17,8 +17,13 @@ class ArithmeticOps():
         ops = a/b
         print(ops)
 
+    def modulus(self, a, b):
+        ops = a%b
+        print(ops)
+
 optn = ArithmeticOps()
 optn.add(10,3)
 optn.subtract(2,3)
 optn.multiply(10,100)
 optn.divide(1000,100)
+optn.modulus(10,5)
